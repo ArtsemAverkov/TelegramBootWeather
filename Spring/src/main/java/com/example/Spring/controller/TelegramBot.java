@@ -53,8 +53,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         listCommands.add(new BotCommand("/mydata", "get yuo data stored"));
         listCommands.add(new BotCommand("/deletedata", "delete my data"));
         listCommands.add(new BotCommand("/help", "info"));
-        listCommands.add(new BotCommand("/salary", "set your salary"));
-        listCommands.add(new BotCommand("/expenses", "set your salary"));
         try {
             this.execute(new SetMyCommands(listCommands, new BotCommandScopeDefault(), null));
         } catch (TelegramApiException e) {

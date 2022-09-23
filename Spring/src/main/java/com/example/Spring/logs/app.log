@@ -1,0 +1,20 @@
+2022-09-23 21:32:56,434 INFO com.example.Spring.Application [main] Starting Application using Java 17.0.2 on MacBook-Air-Artem.local with PID 35697 (/Users/artemaverkov/TelegramBot/Spring/target/classes started by artemaverkov in /Users/artemaverkov/TelegramBot)
+2022-09-23 21:32:56,436 DEBUG com.example.Spring.Application [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-23 21:32:56,436 INFO com.example.Spring.Application [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-23 21:32:57,310 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-23 21:32:57,394 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interfaces.
+2022-09-23 21:32:58,155 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-23 21:32:58,195 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-23 21:32:58,414 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-23 21:32:58,519 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-23 21:32:59,025 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-23 21:32:59,039 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-09-23 21:32:59,723 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-23 21:32:59,729 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-23 21:33:01,406 INFO com.example.Spring.Application [main] Started Application in 5.568 seconds (JVM running for 6.485)
+2022-09-23 21:33:41,615 INFO com.example.Spring.controller.TelegramBot [Temaaak_bot Telegram Executor] 873741965
+2022-09-23 21:33:41,741 INFO com.example.Spring.service.user.UserApiService [Temaaak_bot Telegram Executor] Optional.empty
+2022-09-23 21:33:42,041 INFO com.example.Spring.controller.TelegramBot [Temaaak_bot Telegram Executor] Replied to userАртем
+2022-09-23 21:33:49,263 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-23 21:33:49,283 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-23 21:33:49,301 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

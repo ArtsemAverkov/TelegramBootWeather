@@ -17,7 +17,6 @@ public class Model {
     private String name;
     private Double temp;
     private Double humidity;
-    private String icon;
     private String main;
 
 

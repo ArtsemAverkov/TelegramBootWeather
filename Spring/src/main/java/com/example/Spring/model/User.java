@@ -19,7 +19,7 @@ public class User {
     private long chatId;
     private String firstName;
     private String lastName;
-    private String UserName;
+    private String userName;
     private Timestamp registeredAt;
 
 }

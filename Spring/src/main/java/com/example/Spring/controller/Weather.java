@@ -16,8 +16,6 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.Scanner;
 
-
-//31652981b71a757e8a02b33568c8b4d6
 @Component
 @Slf4j
 public class Weather {
@@ -46,7 +44,6 @@ public class Weather {
         JSONArray weather = jsonObject.getJSONArray("weather");
         for (int i = 0; i <weather.length() ; i++) {
             JSONObject jsonObjects = weather.getJSONObject(i);
-
         model.setMain((String) jsonObjects.get("main"));
 
         }
@@ -54,10 +51,10 @@ public class Weather {
         String icons = EmojiParser.parseToUnicode(setIcons);
         log.info(icons);
 
-        return "City: " + model.getName() + "\n" +
+        return "City: " + model.getName() + " " +
+                icons + "\n" +
                 "Temp: "+ model.getTemp() + "\n" +
-                "Humidity: " + model.getHumidity() + "%" + "\n" +
-                 icons ;
+                "Humidity: " + model.getHumidity();
     }
 }
 

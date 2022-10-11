@@ -36,10 +36,8 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Autowired
     private Weather weather;
 
-
-
     final BotConfig config;
-    boolean waitStart = false;
+
     static final String HELP_TEXT = "This bot is created to demonstrate Spring capabilities. \n\n" +
             "You can execute commands from the main menu\n\n" +
             "Type /start to see a welcome message\n\n" +
@@ -120,9 +118,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         }
     }
 
-
-
-
     private void startCommandReceived(Message message, String name) {
         String answer = EmojiParser.parseToUnicode("Hi," + name + ", nice to mit you!" + " :blush:");
         log.info("Replied to user" + name);
@@ -138,8 +133,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     private void myDataCommand(Message message) {
         var chatId = message.getChatId();
         var chat = message.getChat();
-        String toUnicode = EmojiParser.parseToUnicode(chat.getFirstName() + "\n" + chat.getFirstName() + "\n" +
-                chat.getUserName() + "\n" + chat.getId());
+        String toUnicode = EmojiParser.parseToUnicode(chat.getFirstName() + "\n" + chat.getLastName());
         sendMassage(message, toUnicode);
     }
 

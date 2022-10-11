@@ -9,6 +9,4 @@ public interface UserService {
     Optional<User> getChatId(Long id);
     long createUser(Message message);
     boolean deleteUser(Long id);
-
-    void checkLogin(String login);
 }

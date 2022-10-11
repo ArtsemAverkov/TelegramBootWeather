@@ -30,6 +30,7 @@ public class UserApiService implements UserService{
     @Transactional
     public long createUser(Message message) {
         final User builderUser = builderUser(message);
+        log.info(String.valueOf(builderUser));
         return userRepository.save(builderUser).getChatId();
 
     }
@@ -45,18 +46,13 @@ public class UserApiService implements UserService{
         return true;
     }
 
-    @Override
-    public void checkLogin(String login) {
-
-
-    }
     private User builderUser(Message message){
         var chat = message.getChat();
         return User.builder()
                 .chatId(message.getChatId())
                 .lastName(chat.getLastName())
                 .firstName(chat.getFirstName())
-                .UserName(chat.getUserName())
+                .userName(chat.getUserName())
                 .registeredAt(new Timestamp(System.currentTimeMillis()))
                 .build();
 

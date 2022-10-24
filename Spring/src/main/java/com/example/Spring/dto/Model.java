@@ -1,4 +1,4 @@
-package com.example.Spring.model;
+package com.example.Spring.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

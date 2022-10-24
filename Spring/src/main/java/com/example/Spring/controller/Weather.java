@@ -1,6 +1,6 @@
 package com.example.Spring.controller;
 
-import com.example.Spring.model.Model;
+import com.example.Spring.dto.Model;
 
 import com.vdurmont.emoji.EmojiParser;
 import lombok.extern.slf4j.Slf4j;

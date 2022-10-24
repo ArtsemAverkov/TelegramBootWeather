@@ -1,7 +1,7 @@
 package com.example.Spring.controller;
 
 import com.example.Spring.config.BotConfig;
-import com.example.Spring.model.Model;
+import com.example.Spring.dto.Model;
 import com.example.Spring.model.User;
 import com.example.Spring.service.user.UserService;
 import com.vdurmont.emoji.EmojiParser;

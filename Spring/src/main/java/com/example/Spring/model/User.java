@@ -14,7 +14,7 @@ import java.sql.Timestamp;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User extends org.telegram.telegrambots.meta.api.objects.User {
     @Id
     private long chatId;
     private String firstName;

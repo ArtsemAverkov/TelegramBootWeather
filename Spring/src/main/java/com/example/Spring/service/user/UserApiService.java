@@ -20,8 +20,8 @@ public class UserApiService implements UserService{
 
 
     @Override
-    public Optional<User> getChatId(Long charId) {
-        Optional<User> byId = userRepository.findById(charId);
+    public Optional<User> getChatId(Long chatId) {
+        Optional<User> byId = userRepository.findById(chatId);
         log.info(String.valueOf(byId));
         return byId;
     }
@@ -29,6 +29,7 @@ public class UserApiService implements UserService{
     @Override
     @Transactional
     public long createUser(Message message) {
+
         final User builderUser = builderUser(message);
         log.info(String.valueOf(builderUser));
         return userRepository.save(builderUser).getChatId();
@@ -46,7 +47,7 @@ public class UserApiService implements UserService{
         return true;
     }
 
-    private User builderUser(Message message){
+    public User builderUser (Message message){
         var chat = message.getChat();
         return User.builder()
                 .chatId(message.getChatId())
